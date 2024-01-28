@@ -1,0 +1,57 @@
+// styling for orders main screen styling
+#orderMainHeading {
+  text-align: center;
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+// main section container
+.orderMainContainer {
+  width: 100%;
+  margin-top: 100px;
+
+  // table styling to view all orders
+  table {
+    width: 70%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (max-width: 740px) {
+      width: 100%;
+    }
+
+    // table data and table heading styling
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    // every even child will have the following background color
+    tr:nth-child(even) {
+      background-color: rgb(0 188 212 / 13%);
+    }
+
+    tbody {
+      button {
+        padding: 5px;
+        border-radius: 10px;
+        background: red;
+        border: none;
+        color: white;
+      }
+    }
+
+    // styling table footer to view all the delivered order
+    tfoot {
+      border: 2px solid #2196f3;
+      tr,
+      td {
+        border: 2px solid #2196f3;
+      }
+    }
+  }
+}

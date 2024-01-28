@@ -1,0 +1,53 @@
+// styling to display orders
+.orderContainer {
+  height: 42vh;
+  padding-top: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  // styling for pizza ordering
+  .pizzaOrders {
+    width: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: linear-gradient(0deg, #005177, #00bcd44a);
+
+    button {
+      padding: 5px 35px;
+      border-radius: 50px;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      background: #ffc107;
+    }
+  }
+}
+
+// scrollbar styling
+
+// width
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

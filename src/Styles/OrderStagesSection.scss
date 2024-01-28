@@ -1,0 +1,89 @@
+// pizza stages heading
+#pizzaStageHeading {
+  text-align: center;
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+// orders stages body container styling
+.orderStagesBody {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-around;
+
+  // media query to handle styling if the page size is resized
+  @media only screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 660px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // different order stages
+  section {
+    position: relative;
+    width: 22%;
+    height: 55vh;
+    // background-color: lightblue;
+    // border: 2px solid black;
+    box-shadow: 0px 0px 20px 1px #888;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00bcd442, transparent);
+
+    // media query to handle styling for each section on page resize
+    @media only screen and (max-width: 1100px) {
+      width: 30%;
+      margin-bottom: 120px;
+    }
+    @media only screen and (max-width: 940px) {
+      width: 40%;
+      margin-bottom: 120px;
+    }
+    @media only screen and (max-width: 660px) {
+      width: 70%;
+    }
+    @media only screen and (max-width: 390px) {
+      width: 100%;
+    }
+
+    // each section heading container
+    .OrderHeadingContainer {
+      position: absolute;
+      left: 20%;
+      top: -25%;
+      /* bottom: 10px; */
+      /* right: auto; */
+      width: 55%;
+      height: 25vh;
+      background-color: linen;
+      border-radius: 50%;
+    }
+
+    // background color for section heading design
+    #OrderPlaced,
+    #OrderReady {
+      background: linear-gradient(46deg, #03a9f4, #9c8787);
+    }
+
+    #OrderMaking,
+    #OrderPicked {
+      background: linear-gradient(46deg, #3f51b5, #9c8787);
+    }
+
+    // stages heading
+    .stagesHeading {
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      color: snow;
+    }
+  }
+}
